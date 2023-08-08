@@ -12,18 +12,13 @@ void pattern_10(int n)
 {
     for (int i = 1; i <= n; i++)
     {
-        for (int j = i; j < n; j++)
+        for (int j = 1; j <= 2*(n-i); j++)
         {
             cout << " ";
         }
         for (int k = i; k >= 1; k--)
         {
-            if (k > 1)
-            {
-                cout << " ";
-            }
-            cout << k;
-
+            cout << k << " ";
         }
         cout << endl;
     }
